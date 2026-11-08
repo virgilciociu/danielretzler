@@ -3,40 +3,50 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Startseite | Garten- und Reinigungsservice Marl</title>
-  <meta name="description" content="Daniel Retzler, Ihr freundlicher Nachbar in Marl (NRW): günstig Rasen mähen und Hecken schneiden.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <title>Home | Daniel Retzler – Glückssteine & Schmuck, Marl</title>
+  <meta name="description" content="Glückssteine für jedes Sternzeichen: handgefertigter Schmuck mit Halbedelsteinen von Daniel Retzler aus Marl.">
+  <!-- Work in progress: hidden from search engines. Remove this line at launch. -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#3a1466">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="theme-home">
+  <div class="bg-name" aria-hidden="true"><span>Daniel</span><span>Retzler</span></div>
+
   <header class="site-header">
+    <!-- Work-in-progress banner: delete this div at launch. -->
+    <div class="wip-banner" role="status">🚧 Diese Website befindet sich noch im Aufbau. Einige Inhalte fehlen noch oder können sich ändern.</div>
     <nav class="nav" aria-label="Hauptnavigation">
-      <a class="brand" href="index.html">Garten &amp; Reinigung Marl</a>
-      <ul>
-        <li><a href="index.html" aria-current="page">Startseite</a></li>
-        <li><a href="angebot.html">Was wir bieten</a></li>
-        <li><a href="standort.html">Unser Standort</a></li>
-      </ul>
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="info.html">Info</a>
+        <a href="kontakt.html">Kontakt</a>
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-inner">
-        <h1>Daniel Retzler – Ihr freundlicher Nachbar</h1>
-        <p>Ihr freundlicher Nachbar aus dem Viertel bietet Ihnen günstige Dienstleistungen an: Rasen mähen und Hecken schneiden.</p>
-        <div class="actions">
-          <a class="btn" href="tel:+99078825485">Jetzt anrufen</a>
-          <a class="btn btn-outline" href="angebot.html">Unsere Leistungen</a>
-        </div>
-      </div>
+  <main id="main">
+    <section class="panel">
+      <h1>Glückssteine für jedes Sternzeichen</h1>
+      <p>Willkommen bei <strong class="accent">Daniel Retzler</strong> &ndash; handgefertigter Schmuck mit Halbedelsteinen aus Marl.</p>
+      <p>Der Überlieferung nach lädt ein passender Stein die Aura seines Trägers auf. Wer ihn nah bei sich trägt, etwa als Armband, bei dem soll sich die Kraft des Steins mit der eigenen Ausstrahlung verbinden und sie stärken.</p>
+      <p>Wählen Sie Ihr Sternzeichen und entdecken Sie die drei Steine, die zu Ihnen passen.</p>
     </section>
+
+    <section class="panel">
+      <h2>Ihr Sternzeichen, Ihre Steine</h2>
+      <div id="zodiac"></div>
+      <noscript><p>Für die Anzeige des Horoskops wird JavaScript benötigt.</p></noscript>
+      <p class="small muted">Hinweis: Die Zuordnung der Steine beruht auf überlieferten Vorstellungen und Traditionen. Sie ersetzt keine medizinische oder psychologische Beratung.</p>
+    </section>
+
+    <p style="text-align:center"><a class="btn" href="info.html">Armbänder entdecken</a></p>
   </main>
 
   <footer>
-    <p>&copy; Daniel Retzler – Garten- und Reinigungsservice, Marl (NRW)</p>
+    <p>&copy; 2026 Daniel Retzler &ndash; Handgefertigter Schmuck mit Halbedelsteinen, Marl (NRW)</p>
+    <p><a href="impressum.html">Impressum</a> <a href="datenschutz.html">Datenschutz</a></p>
   </footer>
+  <script src="js/data.js" defer></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
